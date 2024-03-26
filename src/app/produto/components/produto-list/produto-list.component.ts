@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Produto } from '../../models/produto';
 
@@ -8,6 +8,6 @@ import { Produto } from '../../models/produto';
   styleUrls: ['./produto-list.component.scss']
 })
 export class ProdutoListComponent {
-  produto$!: Observable<Produto[]>;
+  @Input() produtoList$!: Observable<Produto[]>;
   displayedColumns: string[] = ['id', 'nome', 'categoria', 'valor', 'fabricante', 'validade'];
 }
