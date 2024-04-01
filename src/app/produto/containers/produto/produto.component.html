@@ -1,1 +1,11 @@
-<app-produto-list [produtoList$]="produto$"></app-produto-list>
+<mat-card>
+    <mat-card-content>
+        <mat-toolbar>
+            <span>Produtos</span>
+            <span class="example-spacer">
+            </span>
+            <app-produto-search></app-produto-search>
+        </mat-toolbar>
+        <app-produto-list [newProdutoListEvent$]="produto$"></app-produto-list>
+    </mat-card-content>
+</mat-card>

@@ -8,6 +8,6 @@ import { Produto } from '../../models/produto';
   styleUrls: ['./produto-list.component.scss']
 })
 export class ProdutoListComponent {
-  @Input() produtoList$!: Observable<Produto[]>;
+  @Input() newProdutoListEvent$!: Observable<Produto[]>;
   displayedColumns: string[] = ['id', 'nome', 'categoria', 'valor', 'fabricante', 'validade'];
 }
