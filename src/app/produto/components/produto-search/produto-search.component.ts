@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProdutoSearchComponent {
 
+  onKeydown(event?: Event) {
+    console.log(event);
+  }
 }

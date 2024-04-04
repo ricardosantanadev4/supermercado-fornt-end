@@ -8,6 +8,6 @@
   </mat-label>
 
   <span>
-    <input matInput style="color: white;">
+    <input matInput style="color: white;" (keydown.enter)="onKeydown($event)">
   </span>
 </mat-form-field>
